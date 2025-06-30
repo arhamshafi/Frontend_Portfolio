@@ -8,7 +8,7 @@ function App_provider({ children }) {
     let [drk_mod, setdrk_mod] = useState(false)
     let nav_array = ["About me", "Services", "Experience", "Portfolio", "Partners"];
     let [nav_list, setnav_list] = useState("About me")
-    let [menu , setmenu] = useState(false)
+    let [menu, setmenu] = useState(false)
 
     const cursor_effect_on_enter = (e) => {
         const card = e.currentTarget;
@@ -34,7 +34,7 @@ function App_provider({ children }) {
             nav_list, setnav_list,
             cursor_effect_on_leave,
             cursor_effect_on_enter,
-            menu,setmenu
+            menu, setmenu
         }}>
             {children}
         </App_context.Provider>

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className={`py-[.1px] select-none min-h-screen transition-all duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
       <Navbar />
-      <Header/>
+      <Header />
 
       {/* Perspective here */}
       {/* <div className=" mt-30 w-max h-max" style={{ perspective: '1000px' }}>
