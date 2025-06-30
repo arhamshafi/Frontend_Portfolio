@@ -1,4 +1,40 @@
 @import "tailwindcss";
-*{
+
+* {
   font-family: 'Poppins', sans-serif;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+}
+.ts_W{
+  text-shadow: .1px .1px 3px white;
+}
+.ts_y{
+  text-shadow: .1px .1px 3px rgb(233, 151, 0);
+}
+.ts_b{
+  text-shadow: .1px .1px 3px gray;
+}
+.bxs_y {
+  box-shadow: 1.5px 2px 5px 2px orange;
+}
+
+@media screen and (max-width:450px) {
+  .cb1 {
+    display: none;
+  }
+  .drk_2{
+    display: flex;
+  }
 }
