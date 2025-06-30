@@ -9,9 +9,6 @@ function Navbar() {
     return (
         <div className={` ${drk_mod ? "bg-white " : "bg-black "} rounded-0 sm:rounded-2xl transition-all duration-300 ease-in w-full sm:w-[90%] lg:w-[95%] xl:w-[90%] fixed top-0 sm:top-5 left-0 sm:left-[5%] lg:left-[2.5%] xl:left-[5%]  h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`}>
             <div className={`absolute w-[200px] h-max  top-[120%] transition-all duration-300 block lg:hidden ease-in  rounded-xl right-2  ${menu ? " translate-x-0 opacity-100 visible " : "opacity-0 invisible translate-x-20 "} `} >
-                {/* ////////// menu div //////////// */}
-
-
                 {
                     nav_array.map((ele, idx) => {
                         return (
@@ -47,7 +44,7 @@ function Navbar() {
                 </ul>
                 <div className='w-max h-max flex justify-center items-center gap-2'>
                     <Menu_btn />
-                    <button className='bg-yellow-400 ts_W cb1 bxs_y cursor-pointer text-sm lg:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-3xl text-white font-bold'>Contact</button>
+                    <button className='bg-yellow-400 ts_W cb1 bxs_y cursor-pointer text-sm lg:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold'>Contact</button>
                 </div>
             </div>
         </div>

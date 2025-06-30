@@ -1,15 +1,17 @@
 import React, { useContext, useRef } from 'react';
 import Navbar from './Navbar';
 import { App_context } from './Context';
+import Header from './Header';
 
 function App() {
-  const { drk_mod , cursor_effect_on_leave , cursor_effect_on_enter } = useContext(App_context);
+  const { drk_mod, cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context);
 
- 
+
 
   return (
     <div className={`py-[.1px] select-none min-h-screen transition-all duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
       <Navbar />
+      <Header/>
 
       {/* Perspective here */}
       {/* <div className=" mt-30 w-max h-max" style={{ perspective: '1000px' }}>
@@ -29,8 +31,8 @@ function App() {
 
         </div>
       </div> */}
-     
-       
+
+
     </div>
   );
 }
