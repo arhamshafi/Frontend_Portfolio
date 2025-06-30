@@ -1,14 +1,18 @@
 import React, { useContext } from 'react'
 import { App_context } from './Context'
+import ModelViewer from './Model_3d';
 
 function Header() {
     let { drk_mod } = useContext(App_context)
     return (
-        <div className={`w-full h-max py-1 pb-10 px-20 flex justify-between `}>
-            <div className='w-[680px] h-max mt-35'>
+        <div className={`w-full h-max py-1 pb-10 px-20 flex main_border justify-between items-center `}>
+            <div className='w-[750px] h-max mt-35 mp_1 '>
                 <h1 className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-4xl font-bold `}>Hi, I'm !</h1>
                 <h1 className='text-yellow-400 italic  text-4xl font-bold mt-5 ts_y'> Muhammad Arham Shafi ...</h1>
                 <p className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-2xl ts_b font-bold  mt-5`}> A <span className='text-yellow-400 ts_y font-bold'>Front-End Web Developer</span>  with focus on <span className='text-yellow-400 ts_y font-bold'>UI/UX</span> design</p>
+                {/* /////// */}
+                <div className='w-[500px] justify-center items-center h-[400px] mx-auto  hidden mp_3'> <ModelViewer /></div>
+                {/* ///////// */}
                 <div className={` ${drk_mod ? "text-white/70" : "text-black/70 "} mt-10 text-lg relative px-5`}>
                     <div className={`w-[8px] top-2.5 h-[8px]  rounded-full ${drk_mod ? "bg-white" : "bg-black"} left-0 absolute  `}></div>
                     Currently, I’m pursuing a <b className={`${drk_mod ? "text-white" : ""}`}>Full Stack Development</b> course and working on real-world projects that combine design thinking with clean development practices.
@@ -23,8 +27,8 @@ function Header() {
                 </div>
                 <button className='bg-yellow-400 ts_W bxs_y cursor-pointer mt-10 text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold'>Download CV</button>
             </div>
-            <div className='w-[500px] h-[500px] border mt-35 '>
-                
+            <div className='w-[500px] h-[500px] mt-35 mp_2 justify-center items-center flex'>
+                  <ModelViewer />
             </div>
         </div>
     )

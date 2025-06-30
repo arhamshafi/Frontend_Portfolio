@@ -30,7 +30,22 @@
 .bxs_y {
   box-shadow: 1.5px 2px 5px 2px orange;
 }
+@media screen and (max-width:1334px){
+  .main_border{
+    flex-wrap: wrap;
 
+  }
+  .mp_1  {
+    width:100%;
+  }
+  .mp_2{
+   display: none;
+  }
+  .mp_3{
+   display: flex ;
+  }
+  
+}
 @media screen and (max-width:450px) {
   .cb1 {
     display: none;
