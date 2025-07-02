@@ -24,7 +24,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     clamp: false,
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-100, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-100, 0, v)}%`);
   const directionFactor = useRef(1);
 
   useAnimationFrame((_, delta) => {
@@ -37,7 +37,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
-        {Array.from({ length: 10 }).map((_, i) => (
+        {Array.from({ length: 30 }).map((_, i) => (
           <span key={i}>{children}&nbsp;&nbsp;</span>
         ))}
       </motion.div>

@@ -48,43 +48,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
-  font-size: clamp(2rem, 4vw, 3rem);
+  padding: 5px 0;
+  font-size: 60px;
   font-weight: bold;
+  rotate: -2deg;
   white-space: nowrap;
   width: 100%;
+  line-height: 1.2; 
 }
 
 .scroller {
   display: inline-flex;
   white-space: nowrap;
-  gap: 10px;
+  gap: 5px;
   min-width: 100%;
 }
-
-
-
-
-
 
 @media screen and (max-width:1334px) {
   .main_border {
     flex-wrap: wrap;
 
   }
-
   .mp_1 {
     width: 100%;
   }
-
   .mp_2 {
     display: none;
   }
-
   .mp_3 {
     display: flex;
   }
-
+  .parallax{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:760px){
+  .parallax{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width:450px) {
@@ -119,5 +120,8 @@
     margin: auto;
     display: block;
     margin-top: 30px;
+  }
+  .parallax{
+    font-size: 20px;
   }
 }
