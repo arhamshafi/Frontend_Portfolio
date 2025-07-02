@@ -99,6 +99,18 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(10px);
   }
 }
+.textanime{
+  animation: textanime 1s infinite alternate ease-in-out;
+}
+@keyframes textanime{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(5px);
+  }
+}
+
 
 @media screen and (max-width:1334px) {
   .main_border {

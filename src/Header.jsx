@@ -48,10 +48,10 @@ function Header() {
     return (
         <div className="w-full h-max py-1 pb-4 sm:pb-10 ppmain px-5 md:px-10 lg:px-20 flex main_border justify-between items-center">
             <div className="w-[750px] h-max mt-18 sm:mt-25 lg:mt-35 mp_1 ">
-                <h1 className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-xl sm:text-2xl mfs lg:text-4xl font-bold`}>
-                    Hi, I'm <span className="text-yellow-400 italic  ts_y">Muhammad Arham Shafi</span>
+                <h1 className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-xl sm:text-2xl mfs lg:text-4xl textanime font-bold`}>
+                    Hi, I'm <span className="text-yellow-400 italic ts_y">Muhammad Arham Shafi</span>
                 </h1>
-                <p className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-md cen sm:text-xl lg:text-2xl ts_b font-bold mt-5 sm:mt-7 md:mt-10`}>
+                <p className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-md cen sm:text-xl textanime lg:text-2xl ts_b font-bold mt-5 sm:mt-7 md:mt-10`} style={{animationDelay:".5s"}}>
                     A <span className="text-yellow-400 ts_y font-bold">Front-End Web Developer</span> crafting smooth and user-centered{" "}
                     <span className="text-yellow-400 ts_y font-bold">UI/UX</span> experiences
                 </p>
@@ -66,19 +66,19 @@ function Header() {
                         <h1 className={` font-bold ${drk_mod ? "text-black" : "text-white"} text-lg  tracking-[.5px] `} >Ui/UX interfaces</h1>
                     </div>
                 </div>
-                <div className={`${drk_mod ? "text-white/70" : "text-black/70 "} fs mt-5  md:mt-10 text-sm md:text-md lg:text-lg relative px-5`}>
+                <div className={`${drk_mod ? "text-white/70" : "text-black/70 "} fs mt-5 textanime md:mt-10 text-sm md:text-md lg:text-lg relative px-5`} style={{animationDelay:".2s"}}>
                     <div className={`w-[8px] top-2.5 h-[8px] rounded-full ${drk_mod ? "bg-white" : "bg-black"} left-0 absolute`} />
                     Currently, I’m pursuing a <b className={`${drk_mod ? "text-white" : ""}`}>Full Stack Development</b> course and working on real-world projects...
                 </div>
-                <div className={`mt-3 text-sm md:text-md lg:text-lg fs relative ${drk_mod ? "text-white/70" : "text-black/70 "} px-5`}>
+                <div className={`mt-3 text-sm md:text-md lg:text-lg textanime fs relative ${drk_mod ? "text-white/70" : "text-black/70 "} px-5`}>
                     <div className={`w-[8px] top-2.5 h-[8px] rounded-full ${drk_mod ? "bg-white" : "bg-black"} left-0 absolute`} />
                     I don’t just build interfaces — I create meaningful, user-first experiences that look great and feel intuitive.
                 </div>
-                <div className={`mt-3 text-sm md:text-md lg:text-lg fs relative ${drk_mod ? "text-white/70" : "text-black/70 "} px-5`}>
+                <div className={`mt-3 text-sm md:text-md textanime lg:text-lg fs relative ${drk_mod ? "text-white/70" : "text-black/70 "} px-5`} style={{animationDelay:".1s"}}>
                     <div className={`w-[8px] top-2.5 h-[8px] rounded-full ${drk_mod ? "bg-white" : "bg-black"} left-0 absolute`} />
                     I’m actively seeking a <b className={`${drk_mod ? "text-white" : ""}`}>remote</b> front-end developer role or <b className={`${drk_mod ? "text-white" : ""}`}>internship</b> where I can grow, contribute meaningfully, and collaborate on impactful digital experiences
                 </div>
-                <button className="bg-yellow-500 ts_W bxs_y bl cursor-pointer mt-5 sm:mt-10 text-sm md:text-md sm:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold">
+                <button className="bg-yellow-500 up_down_anime ts_W bxs_y bl cursor-pointer mt-5 sm:mt-10 text-sm md:text-md sm:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold">
                     Download CV
                 </button>
             </div>

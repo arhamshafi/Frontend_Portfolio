@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import DRK_mod_btn from './DRK_mod_btn'
 import { App_context } from './Context'
 import Menu_btn from './Menu_btn'
@@ -8,6 +8,7 @@ import { log } from 'three/tsl'
 function Navbar() {
     let { drk_mod, nav_array, nav_list, setnav_list, menu } = useContext(App_context)
     let [sticky, setsticky] = useState(false)
+const [s_wid, setwidth] = useState(window.innerWidth >= 640)   
 
     window.onscroll = () => {
         if (window.scrollY > 50) {
@@ -17,9 +18,17 @@ function Navbar() {
             setsticky(false)
         }
     }
+    useEffect(() => {
+    const handleResize = () => {
+      setwidth(window.innerWidth >= 640) 
+      // true or false ho rha yhan !!
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
     return (
-        <div className={` ${drk_mod ? "bg-white " : "bg-black "} ${sticky ? "top-0 w-full left-0 rounded-0 " : "left-[2.5%] rounded-2xl top-5 w-[95%]"}  z-30 transition-all duration-300 ease-in fixed navbar h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`}>
+        <div className={` ${drk_mod ? "bg-white " : "bg-black "} ${sticky ? "top-0 w-full left-0 rounded-0 " : `left-[2.5%]  ${s_wid ? "up_down_anime" : ""} rounded-2xl top-5 w-[95%]`}  z-30 transition-all duration-300 ease-in fixed navbar h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`} style={{ animationDelay: ".7s" }}>
             <div className={`absolute w-[200px] h-max  top-[120%] transition-all duration-300 block lg:hidden ease-in  rounded-xl right-2  ${menu ? " translate-x-0 opacity-100 visible " : "opacity-0 invisible translate-x-20 "} `} >
                 {
                     nav_array.map((ele, idx) => {

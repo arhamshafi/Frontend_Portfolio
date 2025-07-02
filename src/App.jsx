@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import { App_context } from './Context';
 import Header from './Header';
 import ParallaxText from './ParallaxText';
+import Services from './Services';
 
 function App() {
   const { drk_mod, cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context);
@@ -17,6 +18,7 @@ function App() {
         <ParallaxText baseVelocity={-5}>Creative Frontend Developer</ParallaxText>
         <ParallaxText baseVelocity={5}>Building Smooth & Responsive UIs</ParallaxText>
       </div>
+      <Services/>
 
       {/* Perspective here */}
       {/* <div className=" mt-30 w-max h-max" style={{ perspective: '1000px' }}>
