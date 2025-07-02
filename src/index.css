@@ -40,6 +40,12 @@ body {
 .bxs_y {
   box-shadow: 1.5px 2px 5px 2px orange;
 }
+.bxs_w {
+  box-shadow: 1px 1px 5px 2px white;
+}
+.bxs_b {
+  box-shadow: 1px 1px 5px 2px black;
+}
 
 .mp_2 {
   display: flex;
@@ -82,7 +88,17 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-
+.up_down_anime{
+  animation: up_down_anime 1s infinite alternate ease-in-out;
+}
+@keyframes up_down_anime{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
 
 @media screen and (max-width:1334px) {
   .main_border {
