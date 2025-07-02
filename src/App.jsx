@@ -6,14 +6,14 @@ import ParallaxText from './ParallaxText';
 
 function App() {
   const { drk_mod, cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context);
-
+  
 
 
   return (
-    <div className={`py-[.1px] select-none min-h-screen transition-all duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
+    <div className={`py-[.1px] select-none min-h-screen transition-all overflow-hidden duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
       <Navbar />
       <Header />
-      <div className={`${drk_mod ? "text-white" : "text-black"} transition-all duration-300 ease-in `}>
+      <div className={`${drk_mod ? "text-white" : "text-black"} transition-all duration-300 ease-in w-full `}>
         <ParallaxText baseVelocity={-5}>Creative Frontend Developer</ParallaxText>
         <ParallaxText baseVelocity={5}>Building Smooth & Responsive UIs</ParallaxText>
       </div>

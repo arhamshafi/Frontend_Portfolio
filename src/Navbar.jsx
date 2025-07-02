@@ -1,13 +1,25 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import DRK_mod_btn from './DRK_mod_btn'
 import { App_context } from './Context'
 import Menu_btn from './Menu_btn'
 import Drk_mod_btn2 from './Drk_mod_btn2'
+import { log } from 'three/tsl'
 
 function Navbar() {
     let { drk_mod, nav_array, nav_list, setnav_list, menu } = useContext(App_context)
+    let [sticky, setsticky] = useState(false)
+
+    window.onscroll = () => {
+        if (window.scrollY > 50) {
+            setsticky(true)
+        }
+        else {
+            setsticky(false)
+        }
+    }
+
     return (
-        <div className={` ${drk_mod ? "bg-white " : "bg-black "} rounded-0 sm:rounded-2xl z-30 transition-all duration-300 ease-in w-full sm:w-[90%] lg:w-[95%] xl:w-[90%] fixed top-0 sm:top-5 left-0 sm:left-[5%] lg:left-[2.5%] xl:left-[5%]  h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`}>
+        <div className={` ${drk_mod ? "bg-white " : "bg-black "} ${sticky ? "top-0 w-full left-0 rounded-0 " : "left-[2.5%] rounded-2xl top-5 w-[95%]"}  z-30 transition-all duration-300 ease-in fixed navbar h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`}>
             <div className={`absolute w-[200px] h-max  top-[120%] transition-all duration-300 block lg:hidden ease-in  rounded-xl right-2  ${menu ? " translate-x-0 opacity-100 visible " : "opacity-0 invisible translate-x-20 "} `} >
                 {
                     nav_array.map((ele, idx) => {
