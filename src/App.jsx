@@ -13,8 +13,10 @@ function App() {
     <div className={`py-[.1px] select-none min-h-screen transition-all duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
       <Navbar />
       <Header />
-      <ParallaxText baseVelocity={-5}>Creative Frontend Developer</ParallaxText>
-      <ParallaxText baseVelocity={5}>Building Smooth & Responsive UIs</ParallaxText>
+      <div className={`${drk_mod ? "text-white" : "text-black"} transition-all duration-300 ease-in `}>
+        <ParallaxText baseVelocity={-5}>Creative Frontend Developer</ParallaxText>
+        <ParallaxText baseVelocity={5}>Building Smooth & Responsive UIs</ParallaxText>
+      </div>
 
       {/* Perspective here */}
       {/* <div className=" mt-30 w-max h-max" style={{ perspective: '1000px' }}>
