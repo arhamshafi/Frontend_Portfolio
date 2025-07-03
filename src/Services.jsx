@@ -20,18 +20,19 @@ function Services() {
 
                         <div key={idx} className=" w-max h-max" style={{ perspective: '1000px' }}>
                             <div onMouseMove={cursor_effect_on_enter} onMouseLeave={cursor_effect_on_leave}
-                                className="w-[350px] h-[400px] rounded-2xl shadow-2xl transition-all ease-out duration-200"
+                                className="scale-90 sm:scale-100 cursor-pointer  w-[250px] sm:w-[300px] lg:w-[350px] h-[350px] sm:h-[400px] flex flex-col gap-5 lg:gap-10 px-5 rounded-2xl shadow-2xl transition-all ease-out duration-200"
                                 style={{
                                     transformStyle: 'preserve-3d',
                                     color: 'white',
-                                    display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    border: '5px solid yellow'
+                                    border: '5px solid yellow',
+                                     
                                 }}
                             >
-                                <div className='w-[100px] h-[100px] border'><img src={ele.img} alt="" /></div>
-
+                                <div className='w-[100px] textanime' style={{animationDelay: `${idx + 1}s`}}><img src={ele.img} alt="" /></div>
+                                <h3 className={`text-md lg:text-lg font-bold textanime text-center mb-2 ${drk_mod ? "text-yellow-400" : "text-yellow-600"}`} style={{ animationDelay: `${idx + 1}s` }}>{ele.name}</h3>
+                                <p className={`text-[11px] sm:text-sm textanime text-center ${drk_mod ? "text-white/80" : "text-black/80"}`} style={{ animationDelay: `${idx + .5}s` }}>{ele.info}</p>
                             </div>
                         </div>
                     )
@@ -40,13 +41,7 @@ function Services() {
 
 
             </div>
-            {/* <p>5 cards remaing</p> */}
-            {/* <p>Frontend Web Development</p> */}
-            {/* <p>Animated User Interfaces</p> */}
-            {/* <p>REST API Integration</p> */}
-            {/* <p>Custom UI Components</p> */}
-            {/* <p> Bug Fixing & Code Optimization</p> */}
-            {/* <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p> */}
+            <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p>
         </div>
     )
 }
