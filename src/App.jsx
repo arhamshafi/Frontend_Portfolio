@@ -4,10 +4,11 @@ import { App_context } from './Context';
 import Header from './Header';
 import ParallaxText from './ParallaxText';
 import Services from './Services';
+import Skills from './Skills';
 
 function App() {
   const { drk_mod } = useContext(App_context);
-  
+
 
 
   return (
@@ -18,10 +19,10 @@ function App() {
         <ParallaxText baseVelocity={-5}>Creative Frontend Developer</ParallaxText>
         <ParallaxText baseVelocity={5}>Building Smooth & Responsive UIs</ParallaxText>
       </div>
-      <Services/>
+      <Services />
+      <Skills />
 
-      {/* Perspective here */}
-     
+      <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p>
 
 
     </div>

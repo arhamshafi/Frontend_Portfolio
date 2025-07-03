@@ -13,7 +13,7 @@ function Services() {
             <p className={`text-center w-[95%] sm:w-[90%] lg:w-3/4 textanime mt-8 fs sm:mt-15 lg:mt-20 ${drk_mod ? "text-white/80" : "text-black/70"} mx-auto tracking-[1px] text-sm md:text-lg xl:text-xl leading-relaxed `} style={{ wordSpacing: "2px", animationDelay: ".4s" }}>
                 From crafting sleek, user-friendly interfaces to designing playful, interactive animations — I specialize in transforming your bold ideas into seamless, responsive digital experiences. Every pixel I place has a purpose, and every motion I create adds meaning. Whether you're building a brand or upgrading your web presence, I’m here to turn your vision into an engaging, functional reality — pixel by pixel.
             </p>
-            <div className='w-full h-max flex justify-center items-center gap-10 flex-wrap  mt-20'>
+            <div className='w-full h-max flex justify-center items-center gap-10 flex-wrap mt-10 sm:mt-20'>
 
                 {data.map((ele, idx) => {
                     return (
@@ -27,10 +27,10 @@ function Services() {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     border: '5px solid yellow',
-                                     
+
                                 }}
                             >
-                                <div className='w-[100px] textanime' style={{animationDelay: `${idx + 1}s`}}><img src={ele.img} alt="" /></div>
+                                <div className='w-[100px] textanime' style={{ animationDelay: `${idx + 1}s` }}><img src={ele.img} alt="" /></div>
                                 <h3 className={`text-md lg:text-lg font-bold textanime text-center mb-2 ${drk_mod ? "text-yellow-400" : "text-yellow-600"}`} style={{ animationDelay: `${idx + 1}s` }}>{ele.name}</h3>
                                 <p className={`text-[11px] sm:text-sm textanime text-center ${drk_mod ? "text-white/80" : "text-black/80"}`} style={{ animationDelay: `${idx + .5}s` }}>{ele.info}</p>
                             </div>
@@ -41,7 +41,6 @@ function Services() {
 
 
             </div>
-            <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p>
         </div>
     )
 }
