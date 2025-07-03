@@ -6,7 +6,7 @@ import ParallaxText from './ParallaxText';
 import Services from './Services';
 
 function App() {
-  const { drk_mod, cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context);
+  const { drk_mod } = useContext(App_context);
   
 
 
@@ -21,23 +21,7 @@ function App() {
       <Services/>
 
       {/* Perspective here */}
-      {/* <div className=" mt-30 w-max h-max" style={{ perspective: '1000px' }}>
-        <div
-          onMouseMove={cursor_effect_on_enter}
-          onMouseLeave={cursor_effect_on_leave}
-          className="w-[300px] h-[400px] bg-gradient-to-br from-gray-800 to-gray-600 rounded-2xl shadow-2xl transition-all ease-out duration-200"
-          style={{
-            transformStyle: 'preserve-3d',
-            color: 'white',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            border: '1px solid #444'
-          }}
-        >
-
-        </div>
-      </div> */}
+     
 
 
     </div>
