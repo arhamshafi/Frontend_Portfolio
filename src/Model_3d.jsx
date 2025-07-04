@@ -40,7 +40,7 @@ export default function ModelViewer() {
                 <OrbitControls
                     enableZoom={false}
                     autoRotate
-                    autoRotateSpeed={2.5}
+                    autoRotateSpeed={1.5}
                 />
             </Canvas>
         </div>
