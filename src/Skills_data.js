@@ -24,6 +24,10 @@ const skill_icon = [
   { title: "Vite", color: "#646cff", icon: SiVite },
   { title: "React Router", color: "#f44250", icon: SiReactrouter },
   { title: "JQuerry", color: "#0769ad", icon: SiJquery },
+  { title: "API Integration", color: "#0a9396", icon: MdApi },
+  { title: "Axios", color: "#5a29e4", icon: SiAxios },
+  { title: "CORS", color: "#ee9b00", icon: SiCors },
+  { title: "Problem Solving", color: "#3a0ca3", icon: FaPuzzlePiece },
 ];
 
 export default skill_icon;
