@@ -1,9 +1,10 @@
 import { DiJavascript1 } from "react-icons/di";
-import { FaCss3 } from "react-icons/fa";
+import { FaCss3, FaPuzzlePiece } from "react-icons/fa";
+import { MdApi, MdSecurity } from "react-icons/md"; // ✅ CORS alternative
 import {
   SiHtml5, SiReact, SiNodedotjs, SiMongodb, SiTailwindcss,
   SiGithub, SiBootstrap, SiMui, SiChartdotjs, SiThreedotjs,
-  SiFigma, SiNpm, SiVite, SiReactrouter, SiJquery
+  SiFigma, SiNpm, SiVite, SiReactrouter, SiJquery, SiAxios
 } from "react-icons/si";
 
 const skill_icon = [
@@ -26,7 +27,7 @@ const skill_icon = [
   { title: "JQuerry", color: "#0769ad", icon: SiJquery },
   { title: "API Integration", color: "#0a9396", icon: MdApi },
   { title: "Axios", color: "#5a29e4", icon: SiAxios },
-  { title: "CORS", color: "#ee9b00", icon: SiCors },
+  { title: "CORS", color: "#ee9b00", icon: MdSecurity }, // ✅ CORS icon alternative
   { title: "Problem Solving", color: "#3a0ca3", icon: FaPuzzlePiece },
 ];
 
