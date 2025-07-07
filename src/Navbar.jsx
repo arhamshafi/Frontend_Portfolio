@@ -39,10 +39,30 @@ function Navbar() {
                         )
                     })
                 }
-                <div className={`relative w-full h-[40px] drk_2 hidden active:scale-95 transition-all duration-200 ease-in justify-center items-center rounded-lg overflow-hidden  ${drk_mod ? "bg-white " : "bg-black "} group mt-1 cursor-pointer`}>
-                    <div className={`w-1  h-full bg-yellow-400 absolute bxs_y transition-all duration-200 ease-in-out top-0 left-0 group-hover:w-full `}></div>
-                    <p className={` ${drk_mod ? "text-black" : "text-white"}  tracking-[1px] absolute font-bold`}> Contact </p>
-                </div>
+               <div
+  className={`relative w-full h-[40px] drk_2 active:scale-95 transition-all duration-200 ease-in-out justify-center items-center rounded-lg overflow-hidden ${drk_mod ? "bg-white" : "bg-black"} group mt-1 cursor-pointer flex`}
+>
+  {/* Yellow hover overlay bar */}
+  <div className="w-1 h-full bg-yellow-400 absolute top-0 left-0 transition-all duration-200 ease-in-out group-hover:w-full z-0" />
+
+  {/* Centered text */}
+  <a
+    href="https://wa.me/923226423043"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact on WhatsApp"
+    className="z-10"
+  >
+    <p
+      className={`${
+        drk_mod ? "text-black" : "text-white"
+      } tracking-[1px] font-bold text-base`}
+    >
+      Contact
+    </p>
+  </a>
+</div>
+
                 <div className={`relative w-full h-[40px] drk_2  hidden active:scale-95 transition-all duration-200 ease-in justify-center items-center rounded-lg overflow-hidden  ${drk_mod ? "bg-white " : "bg-black "} group mt-1 cursor-pointer`}>
                     <div className={`w-1  h-full bg-yellow-400 absolute bxs_y transition-all duration-200 ease-in-out top-0 left-0 group-hover:w-full `}></div>
                     <div className={` ${drk_mod ? "text-black" : "text-white"}  tracking-[1px] text-sm absolute font-bold`}> <Drk_mod_btn2 /> </div>
