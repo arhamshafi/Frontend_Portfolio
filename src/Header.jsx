@@ -49,11 +49,11 @@ function Header() {
         <div className="w-full h-max py-1 pb-4 sm:pb-10 ppmain px-5 md:px-10 lg:px-20 flex main_border justify-between items-center">
             <div className="w-[750px] h-max mt-18 sm:mt-25 lg:mt-35 mp_1 ">
                 <h1 className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-xl sm:text-2xl mfs lg:text-4xl textanime font-bold`}>
-                    Hi, I'm <span className="text-yellow-400 italic ts_y">Muhammad Arham Shafi</span>
+                    Hi, I'm <span className="text-yellow-500 italic ts_y">Muhammad Arham Shafi</span>
                 </h1>
                 <p className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-md cen sm:text-xl textanime lg:text-2xl ts_b font-bold mt-5 sm:mt-7 md:mt-10`} style={{animationDelay:".5s"}}>
-                    A <span className="text-yellow-400 ts_y font-bold">Front-End Web Developer</span> crafting smooth and user-centered{" "}
-                    <span className="text-yellow-400 ts_y font-bold">UI/UX</span> experiences
+                    A <span className="text-yellow-500 ts_y font-bold">Front-End Web Developer</span> crafting smooth and user-centered{" "}
+                    <span className="text-yellow-500 ts_y font-bold">UI/UX</span> experiences
                 </p>
 
                 <div ref={containerRef3} className="w-max justify-center items-center h-[200px] sm:h-[400px] relative mx-auto hidden mp_3">{showModel3 && <ModelViewer key={Date.now()} />}

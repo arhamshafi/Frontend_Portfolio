@@ -3,12 +3,11 @@ import DRK_mod_btn from './DRK_mod_btn'
 import { App_context } from './Context'
 import Menu_btn from './Menu_btn'
 import Drk_mod_btn2 from './Drk_mod_btn2'
-import { log } from 'three/tsl'
 
 function Navbar() {
     let { drk_mod, nav_array, nav_list, setnav_list, menu } = useContext(App_context)
     let [sticky, setsticky] = useState(false)
-const [s_wid, setwidth] = useState(window.innerWidth >= 640)   
+    const [s_wid, setwidth] = useState(window.innerWidth >= 640)
 
     window.onscroll = () => {
         if (window.scrollY > 50) {
@@ -19,13 +18,13 @@ const [s_wid, setwidth] = useState(window.innerWidth >= 640)
         }
     }
     useEffect(() => {
-    const handleResize = () => {
-      setwidth(window.innerWidth >= 640) 
-      // true or false ho rha yhan !!
-    }
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+        const handleResize = () => {
+            setwidth(window.innerWidth >= 640)
+            // true or false ho rha yhan !!
+        }
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
 
     return (
         <div className={` ${drk_mod ? "bg-white " : "bg-black "} ${sticky ? "top-0 w-full left-0 rounded-0 " : `left-[2.5%]  ${s_wid ? "up_down_anime" : ""} rounded-2xl top-5 w-[95%]`}  z-30 transition-all duration-300 ease-in fixed navbar h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`} style={{ animationDelay: ".7s" }}>
@@ -65,7 +64,9 @@ const [s_wid, setwidth] = useState(window.innerWidth >= 640)
                 </ul>
                 <div className='w-max h-max flex justify-center items-center gap-2'>
                     <Menu_btn />
-                    <button className='bg-yellow-400 ts_W cb1 bxs_y cursor-pointer text-sm lg:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold'>Contact</button>
+                    <a href="https://wa.me/923226423043" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp" >
+                        <button className="bg-yellow-400 ts_W cb1 bxs_y cursor-pointer text-sm lg:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold" > Contact </button>
+                    </a>
                 </div>
             </div>
         </div>
