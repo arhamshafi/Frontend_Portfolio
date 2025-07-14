@@ -120,7 +120,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
 @media screen and (max-width:1334px) {
   .main_border {
     flex-wrap: wrap;
