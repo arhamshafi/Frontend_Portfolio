@@ -1,11 +1,12 @@
 import React, { useContext } from 'react'
 import { App_context } from './Context'
 import skill_icon from './Skills_data'
+import exp_img from "./images/—Pngtree—coder clipart boy working with_11072679.png"
 
 function Skills() {
-    let { drk_mod } = useContext(App_context)
+    let { drk_mod , cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context)
     return (
-        <div className='w-full py-1 h-max px-4 md:px-0'>
+        <div className='w-full py-1 h-max px-4 md:px-0 '>
             <h1 className={`text-center hed_2 font-bold ${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-3xl sm:text-5xl tracking-[2px] mt-0 md:mt-15 lg:mt-20 transition-all duration-150 ease-in textanime`}>Skills <span className='text-yellow-400 ts_y'>&</span> Expertise</h1>
             <p className="text-center w-[95%] fs mx-auto text-base sm:text-xl mt-8 sm:mt-15 text-gray-400 textanime " style={{ animationDelay: ".3s" }}>Tools, technologies, and frameworks I use to build smooth and interactive web experiences</p>
             <div
@@ -27,24 +28,34 @@ function Skills() {
                 })}
 
             </div>
-            <h1 className={`text-xl sm:text-4xl ml-0 md:ml-[5%] hed_2 textanime text-center md:text-left font-bold ${drk_mod ? "text-white ts_W" : "text-black ts_b"} transition-all duration-200 ease-in mt-10 lg:mt-20 `}>Work Experience :-</h1>
-            <h3 className=" text-lg sm:text-xl ml-0 md:ml-[5%] mt-4 mfs textanime font-semibold text-center md:text-left text-yellow-500 ts_y tracking-[2px]" style={{ animationDelay: ".2s" }}>Frontend Developer</h3>
-            <p className=" text-md md:text-lg text-gray-400 mt-4 fs text-center md:text-left ml-0 md:ml-[5%] textanime" style={{ animationDelay: ".4s" }}> WebDevs Company · Full-time · Lahore, Pakistan </p>
-            <p className=" text-md md:text-lg text-gray-400 mt-1 fs text-center md:text-left ml-0 md:ml-[5%] textanime" style={{ animationDelay: ".6s" }}>Aug 2024 – July 2025 (1 Year) </p>
-            <ul
-                className={`list-none text-center fs md:text-left md:list-disc list-inside text-sm sm:text-md md:text-lg transition-all duration-150 ease-in leading-relaxed ${drk_mod ? "text-white" : "text-black"
-                    } mt-5 ml-0 md:ml-[5%] space-y-1`}
-            >
-                {[
-                    "Developed responsive user interfaces using React.js and Tailwind CSS.",
-                    "Integrated APIs using Axios and modern JavaScript (ES6+).",
-                    "Collaborated with UI/UX designers for modern, accessible layouts.",
-                    "Used Git, GitHub and Figma in daily workflow.",
-                ].map((text, idx) => (
-                    <li key={idx} className="textanime" style={{ animationDelay: `${(idx + 1) * 0.2}s` }} >{text}</li>
-                ))}
-            </ul>
-                
+
+            {/* <h1 className={`text-xl sm:text-4xl block lg:hidden mt-10 hed_2 textanime text-center font-bold ${drk_mod ? "text-white ts_W" : "text-black ts_b"} transition-all duration-200 ease-in  `}>🛠️ Work Experience :-</h1> */}
+            <h1 className={`text-center hed_2 font-bold mt-10 ${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-3xl sm:text-5xl tracking-[2px] mt-0 md:mt-15 lg:mt-20 transition-all duration-150 ease-in textanime`}> 🛠️ Work Experience :- </h1>
+
+            <div className='w-full flex  justify-center items-center mt-10 lg:mt-20 flex-wrap-reverse' style={{ perspective: '1000px' }}>
+                <div className='w-full lg:w-[70%] pl-0 md:pl-10'>
+                    <h1 className={`text-xl sm:text-4xl hidden lg:block hed_2 textanime text-center md:text-left font-bold ${drk_mod ? "text-white ts_W" : "text-black ts_b"} transition-all duration-200 ease-in  `}>🛠️ Work Experience :-</h1>
+                    <h3 className=" text-lg sm:text-xl  mt-4 mfs textanime font-semibold text-center md:text-left text-yellow-500 ts_y tracking-[2px]" style={{ animationDelay: ".2s" }}>Frontend Developer</h3>
+                    <p className=" text-md md:text-lg text-gray-400 mt-4 fs text-center md:text-left textanime" style={{ animationDelay: ".4s" }}> WebDevs Company · Full-time · Lahore, Pakistan </p>
+                    <p className=" text-md md:text-lg text-gray-400 mt-1 fs text-center md:text-left textanime" style={{ animationDelay: ".6s" }}>Aug 2024 – July 2025 (1 Year) </p>
+                    <ul
+                        className={`list-none text-center fs md:text-left md:list-disc list-inside text-sm sm:text-md md:text-lg transition-all duration-150 ease-in leading-relaxed ${drk_mod ? "text-white" : "text-black"
+                            } mt-5 space-y-1`}
+                    >
+                        {[
+                            "Developed responsive user interfaces using React.js and Tailwind CSS.",
+                            "Integrated APIs using Axios and modern JavaScript (ES6+).",
+                            "Collaborated with UI/UX designers for modern, accessible layouts.",
+                            "Used Git, GitHub and Figma in daily workflow.",
+                        ].map((text, idx) => (
+                            <li key={idx} className="textanime" style={{ animationDelay: `${(idx + 1) * 0.2}s` }} >{text}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className='w-full lg:w-[30%] flex justify-center items-center transition-all duration-200 cursor-pointer ease-out '  onMouseMove={cursor_effect_on_enter} onMouseLeave={cursor_effect_on_leave}>
+                    <img className='w-[50%] lg:w-[90%] textanime' src={exp_img} alt="" />
+                </div>
+            </div>
         </div>
     )
 }

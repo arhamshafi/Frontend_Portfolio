@@ -5,7 +5,7 @@ export let App_context = createContext()
 
 function App_provider({ children }) {
 
-    let [drk_mod, setdrk_mod] = useState(false)
+    let [drk_mod, setdrk_mod] = useState(true)
     let nav_array = ["About me", "Services", "Experience", "Portfolio", "Partners"];
     let [nav_list, setnav_list] = useState("About me")
     let [menu, setmenu] = useState(false)
