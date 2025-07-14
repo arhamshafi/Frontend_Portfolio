@@ -36,11 +36,11 @@ function Portfolio() {
                     },
                     {
                         id: 2,
-                        title: "🛍️ Mini Store",
+                        title: "🛍️ Mini Store (Not Responsive...)",
                         desc: "A stylish and animated mini e-commerce platform built with React and Redux Toolkit. Designed for smooth shopping interactions and fast state updates.",
                         features: [
                             "Redux Toolkit-based cart and product management",
-                            "Custom-designed responsive store layout",
+                            "Custom-designed layout",
                             "Add to cart, remove, and quantity update features",
                             "Animated product cards and smooth transitions",
                             "Tailwind CSS styling with hover and click effects"
