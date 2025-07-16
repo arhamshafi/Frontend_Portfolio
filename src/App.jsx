@@ -6,6 +6,7 @@ import ParallaxText from './ParallaxText';
 import Services from './Services';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import Team from './Team';
 
 function App() {
   const { drk_mod } = useContext(App_context);
@@ -23,6 +24,7 @@ function App() {
       <Services />
       <Skills />
       <Portfolio/>
+      <Team/>
 
       <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p>
 
