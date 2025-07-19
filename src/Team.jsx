@@ -21,6 +21,13 @@ const teamData = [
         info: "WordPress | Elementor | WooCommerce"
     },
     {
+        name: "Nabeel",
+        role: "MernStack  Developer",
+        img: img_1,
+        info: "MernStack Developer | React & Tailwind CSS"
+
+    },
+    {
         name: "Shazib",
         role: "Frontend Developer",
         img: img_1,
@@ -77,7 +84,7 @@ function Team() {
                 🤝 <span className="text-yellow-400 italic underline ts_y">Collaborative</span> Moments
             </h1>
 
-            <p className={`${drk_mod ? "text-white" : "text-black"} transition-all duration-200 ease-linear mt-10 text-center text-sm sm:text-md lg:text-lg`}>
+            <p className={`${drk_mod ? "text-white/80" : "text-black/70"} transition-all textanime duration-200 ease-linear mt-10 text-center text-sm sm:text-md lg:text-lg`} style={{ animationDelay: ".3s" }} >
                 While I primarily work as a solo developer, I’m fortunate to have a circle of close friends who bring valuable insights, honest feedback, and creative ideas to the table.
             </p>
 
@@ -96,10 +103,10 @@ function Team() {
                 className="mt-5 sm:mt-10"
             >
                 {teamData.map((member, idx) => (
-                    <SwiperSlide key={idx}>
+                    <SwiperSlide key={idx} style={{ animationDelay: `${idx * 0.4}s` }} className='textanime' >
                         <AnimatedSlide >
-                            <div className='w-full h-full bg-white/10 rounded-2xl flex justify-center items-center overflow-hidden'>
-                                <img src={member.img} className='w-[70%] absolute object-fit' alt="" />
+                            <div className='w-full h-full bg-white/10 rounded-2xl group flex justify-center items-center overflow-hidden'>
+                                <img src={member.img} className='w-[70%] absolute object-fit transition-all duration-300 ease-in-out group-hover:-translate-y-3  ' alt="" />
                                 <div className="absolute bottom-0 w-full p-3 h-full bg-gradient-to-t from-black/90 to-transparent rounded-2xl z-10">
 
                                     <h1 className='text-xl mt-45 tracking-[1px] text-white font-bold ts_y flex items-center gap-2'> {member.name} <MdVerified className='text-sm text-blue-400' />  </h1>
@@ -111,6 +118,10 @@ function Team() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <p className={`text-center ${drk_mod ? "text-white" : "text-black" } transition-all duration-200 ease-linear text-lg mt-10 textanime  `} >
+                Got a project in mind or just want to say hi? <span className={`${drk_mod ? "text-yellow-400" : "text-yellow-500" } `}>Let's build something great together</span>
+            </p>
+
         </div>
     );
 }
