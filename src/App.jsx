@@ -7,6 +7,7 @@ import Services from './Services';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Team from './Team';
+import Footer from './Footer';
 
 function App() {
   const { drk_mod } = useContext(App_context);
@@ -14,7 +15,7 @@ function App() {
 
 
   return (
-    <div className={`py-[.1px] select-none min-h-screen transition-all overflow-hidden duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
+    <div className={`pt-[.1px] pb-[30px] select-none min-h-screen transition-all overflow-hidden duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
       <Navbar />
       <Header />
       <div className={`${drk_mod ? "text-white" : "text-black"} transition-all duration-300 ease-in w-full `}>
@@ -25,8 +26,9 @@ function App() {
       <Skills />
       <Portfolio/>
       <Team/>
+      <Footer/>
 
-      <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p>
+      {/* <p className="animate-pulse text-yellow-400 font-semibold text-center text-lg mt-20 ">🚧 Work in progress...</p> */}
 
 
     </div>

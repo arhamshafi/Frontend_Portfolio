@@ -20,19 +20,17 @@ const teamData = [
         img: img_1,
         info: "WordPress | Elementor | WooCommerce"
     },
-    {
-        name: "Nabeel",
-        role: "MernStack  Developer",
-        img: img_1,
-        info: "MernStack Developer | React & Tailwind CSS"
-
-    },
+   {
+    name: "Muhammad Nabeel",
+    role: "MERN Stack Developer",
+    img: img_1,
+    info: "MongoDB | Express.js | React.js | Node.js"
+},
     {
         name: "Shazib",
         role: "Frontend Developer",
         img: img_1,
         info: "Frontend Developer | React & Tailwind CSS"
-
     },
 ];
 
@@ -69,7 +67,7 @@ function Team() {
 
             setConfig({
                 loop: isLoop,
-                autoplay: isAuto ? { delay: 2000, disableOnInteraction: false } : false,
+                autoplay: isAuto ? { delay: 4000, disableOnInteraction: false } : false,
             });
         };
 
