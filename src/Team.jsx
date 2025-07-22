@@ -77,7 +77,7 @@ function Team() {
     }, []);
 
     return (
-        <div className="w-full h-max py-1 px-4 sm:px-10">
+        <div className="w-full h-max py-1 px-4 sm:px-10" id='Partners'>
             <h1 className={`font-bold textanime ${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-xl sm:text-3xl md:text-5xl text-center mt-10 md:mt-18 transition-all duration-200 ease-in`}>
                 🤝 <span className="text-yellow-400 italic underline ts_y">Collaborative</span> Moments
             </h1>

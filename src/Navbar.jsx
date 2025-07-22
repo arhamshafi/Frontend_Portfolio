@@ -27,41 +27,55 @@ function Navbar() {
     }, [])
 
     return (
-        <div className={` ${drk_mod ? "bg-white/95 " : "bg-black/95 "} ${sticky ? "top-0 w-full left-0 rounded-0 " : `left-[2.5%]  ${s_wid ? "up_down_anime" : ""} rounded-2xl top-5 w-[95%]`}  z-30 transition-all duration-300 ease-in fixed navbar h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`} style={{ animationDelay: ".7s" }}>
-            <div className={`absolute w-[200px] h-max  top-[120%] transition-all duration-300 block lg:hidden ease-in  rounded-xl right-2  ${menu ? " translate-x-0 opacity-100 visible " : "opacity-0 invisible translate-x-20 "} `} >
+        <div className={` ${drk_mod ? "bg-white" : "bg-black/95 "} ${sticky ? "top-0 w-full left-0 rounded-0 " : `left-[2.5%]  ${s_wid ? "up_down_anime" : ""} rounded-2xl top-5 w-[95%]`}  z-30 transition-all duration-300 ease-in fixed navbar h-[50px] lg:h-[60px] xl:h-[70px] flex  justify-between items-center pl-5 pr-4`} style={{ animationDelay: ".7s" }}>
+            <div className={`absolute w-[200px] h-max top-[120%] transition-all duration-300 block lg:hidden ease-in  rounded-xl right-2  ${menu ? " translate-x-0 opacity-100 visible " : "opacity-0 invisible translate-x-20 "} `} >
                 {
                     nav_array.map((ele, idx) => {
                         return (
-                            <div key={idx} className={`relative w-full h-[40px] active:scale-95 transition-all duration-200 ease-in flex justify-center items-center rounded-lg overflow-hidden  ${drk_mod ? "bg-white " : "bg-black "} group mt-1 cursor-pointer`}>
-                                <div className={`w-1  h-full bg-yellow-400 absolute bxs_y transition-all duration-200 ease-in-out top-0 left-0 group-hover:w-full `}></div>
-                                <p className={` ${drk_mod ? "text-black" : "text-white"}  tracking-[1px] absolute font-bold`}> {ele} </p>
+                            <div
+                                key={idx}
+                                className={`relative w-full h-[40px] active:scale-95 transition-all duration-200 ease-in flex justify-center items-center rounded-lg overflow-hidden ${drk_mod ? "bg-white" : "bg-black"} group mt-1 cursor-pointer`}
+                                onClick={() => {
+                                    setnav_list(ele);
+                                    const section = document.getElementById(ele);
+                                    if (section) {
+                                        setTimeout(() => {
+                                            section.scrollIntoView({ behavior: "smooth", block: "start" });
+                                        }, 50);
+                                    }
+                                }}
+
+                            >
+                                <div className="w-1 h-full bg-yellow-400 absolute bxs_y transition-all duration-200 ease-in-out top-0 left-0 group-hover:w-full"></div>
+                                <p className={`${drk_mod ? "text-black" : "text-white"} tracking-[1px] absolute font-bold`}>
+                                    {ele.replace(/_/g, " ")}
+                                </p>
                             </div>
                         )
                     })
                 }
-               <div
-  className={`relative w-full h-[40px] drk_2 active:scale-95 transition-all duration-200 ease-in-out justify-center items-center rounded-lg overflow-hidden ${drk_mod ? "bg-white" : "bg-black"} group mt-1 cursor-pointer flex`}
->
-  {/* Yellow hover overlay bar */}
-  <div className="w-1 h-full bg-yellow-400 absolute top-0 left-0 transition-all duration-200 ease-in-out group-hover:w-full z-0" />
+                <div
+                    className={`relative w-full h-[40px] drk_2 active:scale-95 transition-all duration-200 ease-in-out justify-center items-center rounded-lg overflow-hidden ${drk_mod ? "bg-white" : "bg-black"} group mt-1 cursor-pointer flex`}
+                >
+                    {/* Yellow hover overlay bar */}
+                    <div className="w-1 h-full bg-yellow-400 absolute top-0 left-0 transition-all duration-200 ease-in-out group-hover:w-full z-0" />
 
-  {/* Centered text */}
-  <a
-    href="https://wa.me/923226423043"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contact on WhatsApp"
-    className="z-10"
-  >
-    <p
-      className={`${
-        drk_mod ? "text-black" : "text-white"
-      } tracking-[1px] font-bold text-base`}
-    >
-      Contact
-    </p>
-  </a>
-</div>
+                    {/* Centered text */}
+                    <a
+                        href="https://wa.me/923226423043"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Contact on WhatsApp"
+                        className="z-10"
+                    >
+                        <p
+                            className={`${drk_mod ? "text-black" : "text-white"
+                                } tracking-[1px] font-bold text-base`}
+                        >
+                            Contact
+                        </p>
+                    </a>
+                </div>
 
                 <div className={`relative w-full h-[40px] drk_2  hidden active:scale-95 transition-all duration-200 ease-in justify-center items-center rounded-lg overflow-hidden  ${drk_mod ? "bg-white " : "bg-black "} group mt-1 cursor-pointer`}>
                     <div className={`w-1  h-full bg-yellow-400 absolute bxs_y transition-all duration-200 ease-in-out top-0 left-0 group-hover:w-full `}></div>
@@ -77,7 +91,22 @@ function Navbar() {
                     {
                         nav_array.map((ele, idx) => {
                             return (
-                                <li key={idx} className={`${drk_mod ? "text-black" : "text-white"} transition-all ease-in ${nav_list == ele ? "text-yellow-400 line-through" : ""} cursor-pointer hover:text-yellow-400 duration-300 font-bold text-sm xl:text-md tracking-[1px] `} onClick={() => setnav_list(ele)} >{ele}</li>
+                                <li
+                                    key={idx}
+                                    className={`${drk_mod ? "text-black" : "text-white"} transition-all ease-in ${nav_list == ele ? "text-yellow-400 line-through" : ""} cursor-pointer hover:text-yellow-400 duration-300 font-bold text-sm xl:text-md tracking-[1px] `}
+                                    onClick={() => {
+                                        setnav_list(ele);
+                                        const section = document.getElementById(ele);
+                                        if (section) {
+                                            setTimeout(() => {
+                                                section.scrollIntoView({ behavior: "smooth", block: "start" });
+                                            }, 50);
+                                        }
+                                    }}
+
+                                >
+                                    {ele.replace(/_/g, " ")}
+                                </li>
                             )
                         })
                     }

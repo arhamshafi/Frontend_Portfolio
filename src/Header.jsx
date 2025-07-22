@@ -47,7 +47,7 @@ function Header() {
 
 
     return (
-        <div className="w-full h-max py-1 pb-4 sm:pb-10 ppmain px-5 md:px-10 lg:px-20 flex main_border justify-between items-center">
+        <div id='About-me' className="w-full scroll-mt-24 h-max py-1 pb-4  sm:pb-10 ppmain px-5 md:px-10 lg:px-20 flex main_border justify-between items-center">
             <div className="w-[750px] h-max mt-18 sm:mt-25 lg:mt-35 mp_1 ">
                 <h1 className={`${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-xl sm:text-2xl mfs lg:text-4xl textanime font-bold`}>
                     Hi, I'm <span className="text-yellow-500 italic ts_y">Muhammad Arham Shafi</span>

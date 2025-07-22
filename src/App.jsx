@@ -18,7 +18,7 @@ function App() {
     <div className={`pt-[.1px] pb-[30px] select-none min-h-screen transition-all overflow-hidden duration-300 ease-in ${drk_mod ? "bg-black" : "bg-white"}`}>
       <Navbar />
       <Header />
-      <div className={`${drk_mod ? "text-white" : "text-black"} transition-all duration-300 ease-in w-full `}>
+      <div className={`${drk_mod ? "text-white" : "text-black"} transition-all mt-5 duration-300 ease-in w-full `}>
         <ParallaxText baseVelocity={-5}>Creative Frontend Developer</ParallaxText>
         <ParallaxText baseVelocity={5}>Building Smooth & Responsive UIs</ParallaxText>
       </div>

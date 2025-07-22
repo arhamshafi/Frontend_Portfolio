@@ -11,7 +11,7 @@ function Portfolio() {
     let { drk_mod } = useContext(App_context)
 
     return (
-        <div className='w-full h-max py-3'>
+        <div className='w-full h-max py-3' id='Portfolio'>
             <h1 className={`font-bold textanime ${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-xl sm:text-3xl md:text-5xl text-center mt-10 md:mt-18 transition-all duration-200 ease-in`}>
                 🎨 Code Meets <span className="text-yellow-400 italic underline ts_y">Creativity</span>
             </h1>
