@@ -10,7 +10,7 @@ function Footer() {
 
         <div className="w-full p-3 mt-5">
             <p className={`text-center ${drk_mod ? "text-white/60" : "text-black/60"} textanime text-sm sm:text-md mb-6`} style={{ animationDelay: ".4s" }}>
-                🎇  Let’s connect and create something amazing together. Reach out via email or phone, and I’ll get back to you as soon as possible 🎇
+                 Let’s connect and create something amazing together. Reach out via email or phone, and I’ll get back to you as soon as possible 
             </p>
             <div className={`w-max ${drk_mod ? "text-white" : "text-black"} mx-auto flex justify-center text-2xl items-center gap-5 mt-5`}>
                 <a href="https://wa.me/923226423043"

@@ -4,7 +4,7 @@ import skill_icon from './Skills_data'
 import exp_img from "./images/—Pngtree—coder clipart boy working with_11072679.png"
 
 function Skills() {
-    let { drk_mod , cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context)
+    let { drk_mod, cursor_effect_on_leave, cursor_effect_on_enter } = useContext(App_context)
     return (
         <div className='w-full py-1 h-max px-4 md:px-0 '>
             <h1 className={`text-center hed_2 font-bold ${drk_mod ? "text-white ts_W" : "text-black ts_b"} text-3xl sm:text-5xl tracking-[2px] mt-0 md:mt-15 lg:mt-20 transition-all duration-150 ease-in textanime`}>Skills <span className='text-yellow-400 ts_y'>&</span> Expertise</h1>
@@ -52,8 +52,9 @@ function Skills() {
                         ))}
                     </ul>
                 </div>
-                <div className='w-full lg:w-[30%] flex justify-center items-center transition-all duration-200 cursor-pointer ease-out '  onMouseMove={cursor_effect_on_enter} onMouseLeave={cursor_effect_on_leave}>
-                    <img className='w-[50%] lg:w-[90%] textanime' src={exp_img} alt="" />
+                <div className='w-full lg:w-[30%] relative flex justify-center items-center transition-all duration-200 cursor-pointer ease-out ' onMouseMove={cursor_effect_on_enter} onMouseLeave={cursor_effect_on_leave}>
+                    {/* <div className='w-[15%] h-[15%] absolute top-25 left-53 bg-white'></div> */}
+                    <img className='w-[50%] lg:w-[90%] textanime relative z-10' src={exp_img} alt="" />
                 </div>
             </div>
         </div>
