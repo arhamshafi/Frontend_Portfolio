@@ -80,7 +80,7 @@ function Header() {
                     I’m actively seeking a <b className={`${drk_mod ? "text-white" : ""}`}>remote</b> front-end developer role or <b className={`${drk_mod ? "text-white" : ""}`}>internship</b> where I can grow, contribute meaningfully, and collaborate on impactful digital experiences
                 </div>
                 <a
-                    href="/newcv.pdf"
+                    href="/MERN_PDF - Google Docs.pdf"
                     download="Muhammad_Arham_CV.pdf"
                     className="bg-yellow-500 up_down_anime ts_W bxs_y bl cursor-pointer mt-5 sm:mt-10 text-sm md:text-md sm:text-xl transition-all duration-200 ease-in hover:scale-105 active:scale-95 px-3 py-1 rounded-xl text-white font-bold inline-block text-center"
                 >
