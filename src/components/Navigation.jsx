@@ -53,15 +53,15 @@ const Navigation = () => {
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-18">
           <motion.a
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
-            className={`text-xl sm:text-2xl font-bold transition-all duration-300 ${scrolled ? 'text-black' : 'text-orange-500'
+            className={`text-xl sm:text-2xl font-mono! font-bold transition-all duration-300 ${scrolled ? 'text-black' : 'text-orange-500'
               }`}
             whileHover={{ scale: 1.05 }}
           >
-            Arham<span className={scrolled ? 'text-black' : 'text-orange-500'}>.</span>
+            ARHA<span className={!scrolled ? 'text-black font-mono!' : 'text-white font-mono!'}>Fi.</span>
           </motion.a>
 
           <div className="hidden md:flex items-center gap-6 lg:gap-8">

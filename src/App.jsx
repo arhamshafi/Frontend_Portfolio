@@ -11,7 +11,7 @@ import FooterSection from './components/FooterSection';
 
 function App() {
   return (
-    <div className="bg-white text-gray-900 min-h-screen overflow-x-hidden">
+    <div className="bg-white text-gray-900 min-h-screen select-none overflow-x-hidden">
       <Navigation />
       <div id="home">
         <Hero />
