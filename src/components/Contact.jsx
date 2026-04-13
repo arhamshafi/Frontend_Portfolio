@@ -56,7 +56,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-8">
+            className="space-y-8"
           >
             <div className="mb-10">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
