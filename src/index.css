@@ -1,209 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 * {
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 body {
   overflow-y: auto;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #1f2937;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-.card-container {
-  perspective: 1000px;
+:root {
+  --primary-orange: #f97316;
+  --secondary-orange: #ea580c;
+  --accent-orange: #fb923c;
+  --light-bg: #ffffff;
+  --card-bg: #f9fafb;
+  --border-color: #e5e7eb;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
 }
 
-.card {
-  width: 300px;
-  height: 400px;
-  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  transition: transform 0.1s ease;
-  transform-style: preserve-3d;
-}
-
-.ts_W {
-  text-shadow: .1px .1px 3px white;
-}
-
-.ts_y {
-  text-shadow: .1px .1px 3px orange;
-}
-
-.ts_b {
-  text-shadow: .1px .1px 3px gray;
-}
-
-.bxs_y {
-  box-shadow: 1.5px 2px 5px 2px orange;
-}
-
-.bxs_w {
-  box-shadow: 1px 1px 5px 2px white;
-}
-
-.bxs_b {
-  box-shadow: 1px 1px 5px 2px black;
-}
-
-.mp_2 {
-  display: flex;
-}
-
-.mp_3 {
-  display: none;
-}
-
-.parallax {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0;
-  font-size: 60px;
-  font-weight: bold;
-  rotate: -2deg;
-  white-space: nowrap;
-  width: 100%;
+/* Better spacing for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: #111827;
 }
 
-.scroller {
-  display: inline-flex;
-  white-space: nowrap;
-  gap: 5px;
-  min-width: 100%;
+/* Better paragraph spacing */
+p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #4b5563;
 }
 
+/* Custom scrollbar */
 body::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+  width: 0px;
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent;
+  background: #f3f4f6;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background: #f97316;
+  border-radius: 5px;
 }
 
-.up_down_anime {
-  animation: up_down_anime 1s infinite alternate ease-in-out;
+body::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
 }
 
-@keyframes up_down_anime {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(10px);
-  }
+/* Smooth animations */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textanime {
-  animation: textanime 1s infinite alternate ease-in-out;
+/* Selection color */
+::selection {
+  background-color: #f97316;
+  color: white;
 }
 
-@keyframes textanime {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(5px);
-  }
+/* Focus styles */
+a:focus,
+button:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
 }
 
-
-@media screen and (max-width:1334px) {
-  .main_border {
-    flex-wrap: wrap;
-
-  }
-
-  .mp_1 {
-    width: 100%;
-  }
-
-  .mp_2 {
-    display: none;
-  }
-
-  .mp_3 {
-    display: flex;
-  }
-
-  .parallax {
-    font-size: 40px;
-  }
+/* Better card shadows */
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-@media screen and (max-width:760px) {
-  .parallax {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width:640px) {
-  .navbar {
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-radius: 0;
-  }
-}
-@media screen and (max-width:513px) {
-  .r_img{
-    display: none;
-  }
-  .r_bb{
-    width: 100%;
-  }
-
-}
-@media screen and (max-width:450px) {
-  .cb1 {
-    display: none;
-  }
-
-  .drk_2 {
-    display: flex;
-  }
-
-  .cen {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .fs {
-    font-size: 11px;
-  }
-
-  .mfs {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .ppmain {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .bl {
-    margin: auto;
-    display: block;
-    margin-top: 30px;
-  }
-.hed_2{
-  font-size: 20px;
-}
-  .parallax {
-    font-size: 20px;
-  }
+.card-shadow-hover:hover {
+  box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.2), 0 10px 10px -5px rgba(249, 115, 22, 0.1);
+  transform: translateY(-4px);
 }

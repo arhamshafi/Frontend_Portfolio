@@ -1,12 +1,52 @@
-# React + Vite
+# Muhammad Arham Shafi - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern, and highly professional developer portfolio website showcasing Full Stack Development expertise with MERN stack and Next.js.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Ultra Modern Design**: Clean, minimal UI with dark theme and purple accents
+- **Smooth Animations**: Powered by Framer Motion for engaging user experience
+- **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
+- **Production Ready**: Clean code architecture and optimized performance
+- **SEO Friendly**: Structured for search engine optimization
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Tailwind CSS 4
+- Framer Motion 12
+- React Icons
+- Vite 6
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## 🏃 Development
+
+```bash
+npm run dev
+```
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+## 📝 Customization
+
+See [PORTFOLIO_GUIDE.md](./PORTFOLIO_GUIDE.md) for detailed customization instructions.
+
+## 📧 Contact
+
+- **Email**: arhamshafi@example.com
+- **GitHub**: [github.com/arhamshafi](https://github.com/arhamshafi)
+- **LinkedIn**: [linkedin.com/in/arhamshafi](https://linkedin.com/in/arhamshafi)
+- **Location**: Islamabad, Pakistan
+
+---
+
+Built with ❤️ using React + Vite
