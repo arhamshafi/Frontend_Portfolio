@@ -108,27 +108,51 @@ export const skillsData = {
 export const servicesData = [
   {
     title: "Full Stack Development",
-    description: "End-to-end web application development using MERN stack with modern best practices and scalable architecture.",
+    description:
+      "Building complete web applications using MERN stack with clean architecture and real-world project structure.",
     icon: "🚀",
-    highlights: ["MERN Stack", "Next.js", "Redux Toolkit", "REST APIs"]
+    highlights: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js"
+    ]
   },
   {
     title: "Frontend Development",
-    description: "Building responsive, performant user interfaces with React, Next.js, and modern CSS frameworks.",
+    description:
+      "Creating modern, responsive and interactive user interfaces using React and Tailwind CSS.",
     icon: "💎",
-    highlights: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion"]
+    highlights: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   },
   {
     title: "Backend Development",
-    description: "Robust server-side solutions with Node.js, Express, and MongoDB for scalable applications.",
+    description:
+      "Developing secure and scalable backend systems with APIs, authentication and database integration.",
     icon: "⚡",
-    highlights: ["Node.js", "Express.js", "MongoDB", "API Design"]
+    highlights: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "MongoDB"
+    ]
   },
   {
-    title: "State Management",
-    description: "Complex state management solutions using Redux Toolkit and Context API for enterprise applications.",
+    title: "API Integration & Database",
+    description:
+      "Handling API integrations and database operations for dynamic and data-driven applications.",
     icon: "🔄",
-    highlights: ["Redux Toolkit", "Context API", "Data Flow", "Performance"]
+    highlights: [
+      "REST APIs",
+      "MongoDB",
+      "CRUD Operations",
+      "Authentication"
+    ]
   }
 ];
 
