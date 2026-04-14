@@ -94,3 +94,13 @@ button:focus {
   box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.2), 0 10px 10px -5px rgba(249, 115, 22, 0.1);
   transform: translateY(-4px);
 }
+
+@media screen and (max-width: 500px) {
+  .itmcnteAt500 {
+    justify-content: center;
+  }
+
+  .txtCntrAt500 {
+    text-align: center;
+  }
+}
