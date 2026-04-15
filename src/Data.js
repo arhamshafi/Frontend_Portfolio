@@ -4,15 +4,17 @@ export const projectsData = [
     id: 1,
     title: "ARHAFI Platform",
     category: "E-Commerce",
-    description: "Complete business platform for sellers and students with product verification, dropshipping support, and clean documentation. Currently in active development.",
-    fullDescription: "A comprehensive business platform that enables online product selling with built-in verification system before publishing. Features dropshipping system support and user-friendly design focused on business needs.",
+    description:
+      "Modern business platform for sellers and students with product verification system, dropshipping support, and scalable architecture.",
+    fullDescription:
+      "ARHAFI is a full-stack business ecosystem designed for modern digital sellers. It includes product verification before publishing, dropshipping automation support, and a multi-role system for sellers and students. Built with scalability in mind using Next.js, Node.js, Redux Toolkit, and NestJS.",
     tech: ["Next.js", "Node.js", "Redux Toolkit", "Nest.js"],
     features: [
-      "Product verification system",
-      "Dropshipping integration",
-      "Seller & student management",
-      "Clean documentation",
-      "Business-oriented UI"
+      "Automated product verification system",
+      "Dropshipping workflow integration",
+      "Seller & student role management",
+      "Clean business documentation system",
+      "Scalable architecture design"
     ],
     status: "In Development",
     liveLink: null,
@@ -23,15 +25,17 @@ export const projectsData = [
     id: 2,
     title: "China Home",
     category: "E-Commerce",
-    description: "E-commerce platform for sanitary store with Redux Toolkit state management and comprehensive product catalog system.",
-    fullDescription: "Full-featured e-commerce sanitary store platform with advanced state management using Redux Toolkit. Includes product catalog, cart system, and business-focused UI design.",
+    description:
+      "Sanitary e-commerce platform with Redux Toolkit state management and full product catalog system.",
+    fullDescription:
+      "China Home is a complete e-commerce platform for sanitary products featuring a structured product catalog, cart system, and advanced Redux Toolkit state management. Designed with a clean UI and optimized for real-world business use.",
     tech: ["React.js", "Redux Toolkit", "Node.js", "MongoDB"],
     features: [
-      "Product catalog system",
-      "Redux state management",
+      "Dynamic product catalog system",
+      "Redux Toolkit state management",
       "Shopping cart functionality",
-      "Business-oriented interface",
-      "Responsive design"
+      "Responsive UI design",
+      "Business-focused interface"
     ],
     status: "In Development",
     liveLink: null,
@@ -42,15 +46,17 @@ export const projectsData = [
     id: 3,
     title: "Adam Palace",
     category: "Web Application",
-    description: "React-based web application with content API integration and structured frontend architecture.",
-    fullDescription: "Modern web application built with React featuring clean UI design and efficient API integration for dynamic content management.",
+    description:
+      "React-based web application with structured architecture and API-driven dynamic content.",
+    fullDescription:
+      "Adam Palace is a modern React web application built with a clean architecture and API integration. It uses Context API for state handling and delivers optimized performance with a smooth user experience.",
     tech: ["React.js", "Express.js", "Context API"],
     features: [
-      "Content API integration",
-      "Clean UI design",
-      "Structured frontend",
-      "Responsive layout",
-      "Performance optimized"
+      "API-driven dynamic content",
+      "Clean and structured UI",
+      "Optimized frontend architecture",
+      "Fully responsive layout",
+      "Performance-focused design"
     ],
     status: "Completed",
     liveLink: null,
@@ -61,15 +67,17 @@ export const projectsData = [
     id: 4,
     title: "Foodie App",
     category: "Creative UI",
-    description: "Highly creative food application with 3D model integration and unique frontend design focused on modern UI/UX.",
-    fullDescription: "Innovative food application featuring 3D model integration and creative frontend design. Fully responsive across all devices with focus on exceptional user experience.",
+    description:
+      "Creative food application with 3D elements, smooth animations, and modern UI/UX design.",
+    fullDescription:
+      "Foodie App is a visually rich modern UI project featuring 3D model integration, smooth animations, and immersive user experience. Built with React, Three.js, Framer Motion, and Tailwind CSS.",
     tech: ["React.js", "Three.js", "Framer Motion", "Tailwind CSS"],
     features: [
-      "3D model integration",
-      "Creative UI/UX design",
-      "Fully responsive",
-      "Smooth animations",
-      "Modern interface"
+      "Interactive 3D model integration",
+      "Smooth UI animations",
+      "Modern creative interface",
+      "Fully responsive design",
+      "High-performance rendering"
     ],
     status: "Completed",
     liveLink: null,
