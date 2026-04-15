@@ -25,7 +25,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="services" className="py-12 md:py-20 lg:py-32 px-4 sm:px-6 md:px-12 lg:px-24 relative bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <section id="services" className="py-8 md:py-10 lg:py-22 px-5 lg:px-10 relative bg-gradient-to-br from-gray-50 via-white to-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <motion.div
@@ -53,7 +53,7 @@ const ServicesSection = () => {
               Offer
             </span>
           </h2>
-          
+
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "60px" }}
@@ -61,7 +61,7 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="h-1 bg-orange-600 mx-auto mb-4 sm:mb-6 rounded-full"
           />
-          
+
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -75,7 +75,7 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -85,18 +85,18 @@ const ServicesSection = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              whileHover={{ 
+              whileHover={{
                 y: -8,
                 transition: { duration: 0.2 }
               }}
-              className="group relative bg-white rounded-xl md:rounded-2xl p-5 sm:p-6 md:p-7 lg:p-8 border border-gray-100 hover:border-orange-300 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              className="group relative bg-white rounded-xl md:rounded-2xl p-6 md:p-7 lg:p-8 border border-gray-100 hover:border-orange-300 hover:shadow-2xl transition-all duration-300 overflow-hidden"
             >
               {/* Background Gradient Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
+
               {/* Decorative Circle */}
               <div className="absolute -top-10 -right-10 w-20 h-20 bg-orange-100 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
-              
+
               <div className="relative z-10">
                 {/* Icon with Background */}
                 <div className="inline-block mb-4 sm:mb-5 md:mb-6">
@@ -104,12 +104,12 @@ const ServicesSection = () => {
                     {service.icon}
                   </div>
                 </div>
-                
+
                 {/* Title */}
                 <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-orange-600 transition-colors duration-300">
                   {service.title}
                 </h3>
-                
+
                 {/* Description */}
                 <p className="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                   {service.description}
@@ -118,8 +118,8 @@ const ServicesSection = () => {
                 {/* Highlights List */}
                 <div className="space-y-1.5 sm:space-y-2">
                   {service.highlights.map((highlight, i) => (
-                    <motion.div 
-                      key={i} 
+                    <motion.div
+                      key={i}
                       className="flex items-center gap-2 sm:gap-2.5"
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}

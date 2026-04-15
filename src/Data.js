@@ -81,24 +81,22 @@ export const projectsData = [
 // Skills Data
 export const skillsData = {
   frontend: [
-    { name: "React.js", level: 90, icon: "⚛️" },
-    { name: "Next.js", level: 85, icon: "▲" },
-    { name: "Tailwind CSS", level: 90, icon: "🎨" },
+    { name: "HTML", level: 95, icon: "🌐" },
+    { name: "CSS", level: 90, icon: "🎨" },
     { name: "JavaScript", level: 88, icon: "📜" },
-    { name: "HTML/CSS", level: 95, icon: "🌐" }
+    { name: "React.js", level: 85, icon: "⚛️" },
+    { name: "Next.js", level: 80, icon: "▲" }
   ],
   backend: [
     { name: "Node.js", level: 85, icon: "🟢" },
     { name: "Express.js", level: 82, icon: "🚂" },
+    { name: "NestJS", level: 75, icon: "🧱" },
     { name: "REST APIs", level: 88, icon: "🔌" },
-    { name: "MongoDB", level: 80, icon: "🍃" }
-  ],
-  stateManagement: [
-    { name: "Redux Toolkit", level: 85, icon: "🔄" },
-    { name: "Context API", level: 90, icon: "📦" }
+    { name: "MongoDB", level: 80, icon: "🍃" },
   ],
   tools: [
-    { name: "Git/GitHub", level: 88, icon: "🔧" },
+    { name: "Git", level: 80, icon: "🔧" },
+    { name: "GitHub", level: 88, icon: "🐙" },
     { name: "VS Code", level: 95, icon: "💻" },
     { name: "Postman", level: 85, icon: "📮" }
   ]
