@@ -3,10 +3,10 @@ export const projectsData = [
   {
     id: 1,
     title: "ARHAFI Platform",
-    category: "Full Stack",
+    category: "E-Commerce",
     description: "Complete business platform for sellers and students with product verification, dropshipping support, and clean documentation. Currently in active development.",
     fullDescription: "A comprehensive business platform that enables online product selling with built-in verification system before publishing. Features dropshipping system support and user-friendly design focused on business needs.",
-    tech: ["Next.js", "Node.js", "MongoDB", "Express.js", "Redux Toolkit"],
+    tech: ["Next.js", "Node.js", "Redux Toolkit", "Nest.js"],
     features: [
       "Product verification system",
       "Dropshipping integration",
@@ -17,7 +17,7 @@ export const projectsData = [
     status: "In Development",
     liveLink: null,
     githubLink: null,
-    image: null
+    image: "/arhafi.webp"
   },
   {
     id: 2,
@@ -33,10 +33,10 @@ export const projectsData = [
       "Business-oriented interface",
       "Responsive design"
     ],
-    status: "Completed",
+    status: "In Development",
     liveLink: null,
     githubLink: null,
-    image: null
+    image: "/china.webp"
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const projectsData = [
     category: "Web Application",
     description: "React-based web application with content API integration and structured frontend architecture.",
     fullDescription: "Modern web application built with React featuring clean UI design and efficient API integration for dynamic content management.",
-    tech: ["React.js", "REST API", "CSS3"],
+    tech: ["React.js", "Express.js", "Context API"],
     features: [
       "Content API integration",
       "Clean UI design",
@@ -55,7 +55,7 @@ export const projectsData = [
     status: "Completed",
     liveLink: null,
     githubLink: null,
-    image: null
+    image: "/adam.webp"
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ export const projectsData = [
     status: "Completed",
     liveLink: null,
     githubLink: null,
-    image: null
+    image: "/foodie.webp"
   }
 ];
 
