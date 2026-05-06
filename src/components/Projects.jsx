@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-16 px-4 sm:px-6 md:px-16 lg:px-24 bg-gradient-to-b from-gray-50 to-white"
+      className="py-8 sm:py-16 px-4 sm:px-6 md:px-16 lg:px-24 bg-gradient-to-b from-gray-50 to-white"
     >
       <div className="max-w-6xl mx-auto">
 
@@ -27,7 +27,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
             Featured <span className="text-orange-600">Projects</span>
           </h2>
           <div className="w-20 h-1 bg-orange-500 mx-auto my-4 rounded-full" />
@@ -37,15 +37,15 @@ const Projects = () => {
         </motion.div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-3 mb-14">
+        <div className="flex flex-wrap justify-center gap-3 mb-8 sm:mb-14">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-sm
+              className={`px-3 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 shadow-sm
               ${filter === category
                   ? "bg-orange-600 text-white shadow-orange-300"
-                  : "bg-white text-gray-600 border hover:border-orange-400 hover:text-orange-600"
+                  : "bg-white text-gray-500 border hover:border-orange-400 hover:text-orange-600"
                 }`}
             >
               {category}

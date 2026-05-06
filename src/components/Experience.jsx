@@ -114,7 +114,7 @@ const Experience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-10 md:mb-12"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-10 md:mb-12"
         >
           <div className="bg-gray-50 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 text-center border border-gray-200 hover:border-orange-300 transition-all duration-300">
             <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-orange-600">{totalExperience}+</div>
@@ -167,7 +167,7 @@ const Experience = () => {
           >
             {experiences[activeTab].map((exp, index) => {
               const isExpanded = expandedCards[exp.id];
-              
+
               return (
                 <motion.div
                   key={exp.id}
@@ -177,7 +177,7 @@ const Experience = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="bg-gray-50 rounded-lg sm:rounded-xl overflow-hidden border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all duration-300"
                 >
-                  <div className="p-3 sm:p-4 md:p-5 lg:p-6">
+                  <div className="p-4 md:p-5 lg:p-6">
                     {/* Card Header - Responsive */}
                     <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
                       <div className="text-2xl sm:text-3xl md:text-4xl flex-shrink-0">{exp.icon}</div>
@@ -232,7 +232,7 @@ const Experience = () => {
                           </motion.li>
                         ))}
                       </ul>
-                      
+
                       {/* See More/Less Button */}
                       {(exp.achievements.length > 3 || exp.description.length > 80) && (
                         <button
@@ -260,7 +260,7 @@ const Experience = () => {
                           </motion.span>
                         ))}
                         {!isExpanded && exp.tech.length > 4 && (
-                          <span 
+                          <span
                             onClick={() => toggleExpand(exp.id)}
                             className="text-[8px] sm:text-[9px] md:text-[10px] px-1.5 sm:px-2 py-0.5 sm:py-1 bg-orange-50 border border-orange-200 rounded-md text-orange-600 cursor-pointer hover:bg-orange-100 transition-all"
                           >

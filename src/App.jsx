@@ -21,8 +21,8 @@ function App() {
       <SkillsSection />
       <Projects />
       <Experience />
-      <Contact />
-      <FooterSection />
+      {/* <Contact /> */}
+      {/* <FooterSection /> */}
     </div>
   );
 }
