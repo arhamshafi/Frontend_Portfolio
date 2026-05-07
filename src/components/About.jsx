@@ -6,7 +6,7 @@ const About = () => {
     { label: "Years Exp", value: 1, icon: "💼", suffix: "+" },
     { label: "Projects", value: 8, icon: "🚀", suffix: "+" },
     { label: "Tech Stack", value: 12, icon: "⚡", suffix: "+" },
-    { label: "Clients", value: 3, icon: "😊", suffix: "+" }
+    { label: "Clients", value: 11, icon: "😊", suffix: "+" }
   ];
 
   const sectionRef = useRef(null);

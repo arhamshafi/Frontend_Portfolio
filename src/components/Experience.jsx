@@ -42,7 +42,7 @@ const Experience = () => {
         description: "Working with clients across Pakistan and the UK, delivering modern and scalable business-oriented web applications with clean UI/UX and optimized backends.",
         achievements: [
           "Delivered 15+ business applications",
-          "Created ARHAFI Platform for Gujranwala",
+          "Created ARHAFI Platform for National / Inter-National Buisness",
           "Developed China Home e-commerce platform with Redux Toolkit",
           "Delivered multiple React/Next.js projects for UK clients",
           "Worked with MERN, Next.js, and Nest.js for advanced systems",
@@ -72,7 +72,7 @@ const Experience = () => {
     ],
   };
 
-  const totalExperience = 2;
+  const totalExperience = 1;
   const projectsCompleted = 8;
   const satisfiedClients = 11;
 
@@ -104,7 +104,7 @@ const Experience = () => {
           </h2>
           <div className="w-10 sm:w-12 md:w-16 h-0.5 sm:h-1 bg-orange-600 mx-auto mb-3 sm:mb-4 rounded-full" />
           <p className="text-gray-600 text-xs sm:text-sm md:text-base max-w-2xl mx-auto px-2">
-            2+ years of proven development & business leadership experience
+            1+ year of proven development & business leadership experience
           </p>
         </motion.div>
 
