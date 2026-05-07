@@ -18,7 +18,7 @@ const Hero = () => {
             className="text-orange-600 text-xs sm:text-sm md:text-base font-semibold tracking-wider uppercase mb-3 sm:mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
           >
             Full Stack Developer
           </motion.p>
@@ -27,7 +27,7 @@ const Hero = () => {
             className="text-3xl sm:text-4xl md:text-7xl  xl:text-8xl font-bold mb-4 sm:mb-8 text-gray-900 leading-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.5, duration: 1 }}
           >
             Muhammad Arham{' '}
             <span className="text-orange-600 block sm:inline">Shafi</span>
@@ -37,7 +37,7 @@ const Hero = () => {
             className="text-base sm:text-lg md:text-2xl lg:text-3xl text-gray-600 mb-6 sm:mb-10 max-w-3xl mx-auto leading-relaxed font-medium px-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.7 }}
           >
             Building production-ready web applications with{' '}
             <span className="text-orange-600 font-bold">
@@ -49,7 +49,7 @@ const Hero = () => {
             className="text-sm sm:text-base md:text-lg text-gray-500 mb-10 sm:mb-16 max-w-2xl mx-auto px-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.9 }}
           >
             1 year of proven experience delivering business-focused solutions
           </motion.p>
@@ -58,7 +58,7 @@ const Hero = () => {
             className="flex gap-4 sm:gap-6 justify-center items-center px-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 1.1 }}
           >
             <a
               href="#projects"

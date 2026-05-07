@@ -22,9 +22,10 @@ const Projects = () => {
 
         {/* Heading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-14"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
@@ -37,7 +38,13 @@ const Projects = () => {
         </motion.div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8 sm:mb-14">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+          className="flex flex-wrap justify-center gap-3 mb-8 sm:mb-14"
+        >
           {categories.map((category) => (
             <button
               key={category}
@@ -51,17 +58,21 @@ const Projects = () => {
               {category}
             </button>
           ))}
-        </div>
+        </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <motion.div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
+              initial={{ opacity: 0, y: 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ 
+                duration: 0.8, 
+                delay: index * 0.2,
+                ease: "easeOut"
+              }}
               className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
             >
               {/* Image */}
@@ -106,19 +117,35 @@ const Projects = () => {
                 </p>
 
                 {/* Tech */}
-                <div className="flex flex-wrap gap-2 mt-4">
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="flex flex-wrap gap-2 mt-4"
+                >
                   {project.tech.map((t, i) => (
-                    <span
+                    <motion.span
                       key={i}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: 0.4 + (i * 0.05) }}
                       className="text-[11px] px-3 py-1 bg-gray-100 rounded-full text-gray-600"
                     >
                       {t}
-                    </span>
+                    </motion.span>
                   ))}
-                </div>
+                </motion.div>
 
                 {/* Buttons */}
-                <div className="flex gap-3 mt-6">
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="flex gap-3 mt-6"
+                >
                   <button
                     onClick={() => setSelectedProject(project)}
                     className="flex-1 bg-orange-600 text-white py-2.5 rounded-xl text-sm font-medium hover:bg-orange-700 transition shadow-md"
@@ -132,11 +159,11 @@ const Projects = () => {
                   >
                     Details
                   </button>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* MODAL */}
         {selectedProject && (

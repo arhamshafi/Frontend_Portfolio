@@ -62,7 +62,7 @@ const About = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeOut" }
     }
   };
 
@@ -72,7 +72,7 @@ const About = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.4, ease: "easeOut" }
+      transition: { duration: 0.7, ease: "easeOut" }
     }
   };
 
@@ -87,13 +87,13 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.9 }}
           className="text-center mb-10 md:mb-16"
         >
           <motion.div
             initial={{ scale: 0 }}
             animate={isInView ? { scale: 1 } : { scale: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="inline-block"
           >
             <span className="text-orange-600 font-semibold text-xs sm:text-sm uppercase tracking-wider bg-orange-100 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">
@@ -110,7 +110,7 @@ const About = () => {
           <motion.div
             initial={{ width: 0 }}
             animate={isInView ? { width: "60px" } : { width: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.9, delay: 0.5 }}
             className="h-1 bg-orange-600 mx-auto rounded-full"
           />
         </motion.div>
@@ -158,7 +158,7 @@ const About = () => {
                   key={index}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                  transition={{ duration: 0.4, delay: 0.8 + (index * 0.1) }}
+                  transition={{ duration: 0.7, delay: 0.9 + (index * 0.15) }}
                   whileHover={{ scale: 1.05, backgroundColor: "#f97316", color: "#ffffff" }}
                   className="px-3 sm:px-4 py-1.5 sm:py-2 bg-orange-50 border border-orange-200 rounded-full text-orange-700 text-xs sm:text-sm font-semibold cursor-pointer transition-all duration-300"
                 >
@@ -190,7 +190,7 @@ const About = () => {
                   <motion.h4
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    transition={{ duration: 0.6, delay: index * 0.15 }}
                     className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-600 mb-0.5 sm:mb-1"
                   >
                     {counters[index]}{stat.suffix}

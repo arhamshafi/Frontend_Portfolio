@@ -96,7 +96,7 @@ const Experience = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-6 sm:mb-10 md:mb-12"
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 text-gray-900">
@@ -113,7 +113,7 @@ const Experience = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-10 md:mb-12"
         >
           <div className="bg-gray-50 rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 text-center border border-gray-200 hover:border-orange-300 transition-all duration-300">
@@ -144,7 +144,7 @@ const Experience = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           className="flex justify-center mb-6 sm:mb-10 md:mb-12"
         >
           <button
@@ -162,7 +162,7 @@ const Experience = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="space-y-4 sm:space-y-5 md:space-y-6"
           >
             {experiences[activeTab].map((exp, index) => {
@@ -174,7 +174,7 @@ const Experience = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  transition={{ duration: 0.7, delay: index * 0.15, ease: "easeOut" }}
                   className="bg-gray-50 rounded-lg sm:rounded-xl overflow-hidden border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all duration-300"
                 >
                   <div className="p-4 md:p-5 lg:p-6">
@@ -222,7 +222,7 @@ const Experience = () => {
                             initial={{ opacity: 0, x: -10 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.3, delay: i * 0.05 }}
+                            transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
                             className="text-[10px] sm:text-xs text-gray-600 flex items-start"
                           >
                             <span className="text-orange-500 mr-1.5 sm:mr-2 flex-shrink-0">▸</span>
@@ -253,7 +253,7 @@ const Experience = () => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.3, delay: i * 0.03 }}
+                            transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
                             className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs px-1.5 sm:px-2 md:px-2.5 py-0.5 sm:py-1 bg-white border border-gray-200 rounded-md text-gray-600 hover:border-orange-300 hover:text-orange-600 transition-all whitespace-nowrap"
                           >
                             {tech}
@@ -281,7 +281,7 @@ const Experience = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="mt-8 sm:mt-10 md:mt-12 text-center"
         >
           <motion.a
