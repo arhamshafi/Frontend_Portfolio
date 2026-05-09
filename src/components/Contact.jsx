@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <FaEnvelope className="text-xl sm:text-2xl" />,
       label: "Email",
-      value: "arhamshafi@example.com",
-      link: "mailto:arhamshafi@example.com"
+      value: "arhamshafib@gmail.com",
+      link: "mailto:arhamshafib@gmail.com"
     },
     {
       icon: <FaGithub className="text-xl sm:text-2xl" />,
@@ -19,14 +19,14 @@ const Contact = () => {
     {
       icon: <FaLinkedin className="text-xl sm:text-2xl" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/arhamshafi",
-      link: "https://linkedin.com/in/arhamshafi"
+      value: "linkedin.com/in/arham-butt-7723stack/",
+      link: "https://www.linkedin.com/in/arham-butt-7723stack/"
     },
     {
       icon: <FaMapMarkerAlt className="text-xl sm:text-2xl" />,
       label: "Location",
-      value: "Islamabad, Pakistan",
-      link: null
+      value: "Gujranwala, Pakistan",
+      link: "https://maps.app.goo.gl/VFroULFCGbATWWnq8"
     }
   ];
 
@@ -178,7 +178,7 @@ const Contact = () => {
             </div>
 
             <motion.a
-              href="mailto:arhamshafi@example.com"
+              href="mailto:arhamshafib@gmail.com"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="block w-full text-center px-4 sm:px-6 py-3 sm:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium transition-all duration-300 text-sm sm:text-base"
@@ -200,7 +200,8 @@ const Contact = () => {
           <div className="flex justify-center gap-3 sm:gap-4">
             {[
               { icon: <FaGithub />, link: 'https://github.com/arhamshafi' },
-              { icon: <FaLinkedin />, link: 'https://linkedin.com/in/arhamshafi' }
+              { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/arham-butt-7723stack/' },
+              { icon: <FaWhatsapp />, link: 'https://wa.me/923226423043?text=Hi%20Arham,%20I%20visited%20your%20portfolio.%20I%E2%80%99m%20interested%20in%20software/web%20development%20services%20and%20would%20like%20a%20consultation.' }
             ].map((social, i) => (
               <motion.a
                 key={i}
