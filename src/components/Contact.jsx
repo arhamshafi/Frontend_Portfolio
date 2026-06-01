@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
+  const [showToast, setShowToast] = useState(false);
+
   const contactInfo = [
     {
       icon: <FaEnvelope className="text-xl sm:text-2xl" />,
@@ -30,6 +32,22 @@ const Contact = () => {
     }
   ];
 
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    const email = "arhamshafib@gmail.com";
+    const subject = encodeURIComponent("Project Inquiry - Arham Shafi");
+    const body = encodeURIComponent(
+      "Hello Arham,\n\nI'm interested in working with you on a project.\n\nPlease tell me more about your availability and process.\n\nBest regards,\n"
+    );
+    
+    // Force Gmail to open
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`, '_blank');
+    
+    // Show toast notification
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
+  };
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -53,6 +71,18 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-12 md:py-20 lg:py-32 px-6 sm:px-10 lg:px-14 relative bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      {/* Toast Notification */}
+      {showToast && (
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          className="fixed top-20 left-1/2 transform -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg text-sm sm:text-base"
+        >
+          Opening Gmail compose window...
+        </motion.div>
+      )}
+
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <motion.div
@@ -177,14 +207,14 @@ const Contact = () => {
               ))}
             </div>
 
-            <motion.a
-              href="mailto:arhamshafib@gmail.com"
+            <motion.button
+              onClick={handleEmailClick}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="block w-full text-center px-4 sm:px-6 py-3 sm:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium transition-all duration-300 text-sm sm:text-base"
+              className="block w-full text-center px-4 sm:px-6 py-3 sm:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-medium transition-all duration-300 text-sm sm:text-base cursor-pointer"
             >
               Send Me an Email
-            </motion.a>
+            </motion.button>
           </motion.div>
         </motion.div>
 
