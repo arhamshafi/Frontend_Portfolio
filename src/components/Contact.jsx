@@ -201,7 +201,7 @@ const Contact = () => {
             {[
               { icon: <FaGithub />, link: 'https://github.com/arhamshafi' },
               { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/arham-butt-7723stack/' },
-              { icon: <FaWhatsapp />, link: 'https://wa.me/923226423043?text=Hi%20Arham,%20I%20visited%20your%20portfolio.%20I%E2%80%99m%20interested%20in%20software/web%20development%20services%20and%20would%20like%20a%20consultation.' }
+              { icon: <FaWhatsapp />, link: 'https://whatsapp.com/channel/0029VbCiLWSJP21Ay9qj1w0i' }
             ].map((social, i) => (
               <motion.a
                 key={i}
